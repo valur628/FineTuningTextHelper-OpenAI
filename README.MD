@@ -37,7 +37,7 @@
 - 시작을 누르고 모델 정보 다운로드를 눌러 json 형태로 다운로드 받는다.
 - 현재 정보의 파인튜닝 정보에서 파일을 선택해 json 모델 정보 파일을 집어넣는다.
 - 현재 진행 중인 모델 관련 정보가 뜬다.
-- 최하단의 status가 pending이면 아직 진행중, succeeded면 훈련 완료라는 것을 뜻한다.
+- 최하단의 status가 pending이면 훈련 진행 중, succeeded면 훈련 완료라는 것을 뜻한다.
 - succeeded가 되면 openAI Playground에서 확인 후 사용한다.
 
 ### 주의사항
