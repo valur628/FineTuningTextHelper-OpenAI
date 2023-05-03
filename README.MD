@@ -1,10 +1,9 @@
 # FineTuningTextHelper-openAI
 ### _글도우미 파인튜닝 실행 웹페이지 - openAI GPT-3 기반_
 
->박주철
-
 # 개요
-글도우미 작업용 openAI GPT-3 fine-tune를 실행하는 웹페이지 <br><br>
+>글도우미 작업용 openAI GPT-3 fine-tune를 실행하는 웹페이지.
+
 글도우미 작업을 위해 제작했다. GPT-3 기반의 fine-tune가 가능한 모델을 [TextKeywordExtractor-konlpy]에서 얻어낸 데이터로 훈련 및 설정하는 웹페이지이다. 훈련된 모델의 실 사용은 openAI Playground에서 훈련 이후 사용가능하다.
 ***
 
@@ -53,11 +52,11 @@
 - 해당 문제점의 이유로 koGPT등의 다른 훈련 방식 및 모델을 찾아볼 필요가 있음.
 
 ### 관련 리포지토리
-- [TextKeywordExtractor-openAI] - txt 파일에서 요약문을 추출해서 openAI fine-tune 훈련 데이터를 만드는 프로그램. openAI GPT 기반.
+- [TextSummaryExtractor-openAI] - txt 파일에서 요약문을 추출해서 openAI fine-tune 훈련 데이터를 만드는 프로그램. openAI GPT 기반.
 - [TextKeywordExtractor-konlpy] - txt 파일에서 키워드를 추출해서 openAI fine-tune 훈련 데이터를 만드는 프로그램. konlpy 기반.
 - [FineTuningTextHelper-openAI] - 글도우미 작업을 위한 openAI fine-tune 훈련 작업을 진행하는 웹사이트. openAI 기반.
 
-   [TextKeywordExtractor-openAI]: <https://github.com/valur628/TextKeywordExtractor-openAI>
+   [TextSummaryExtractor-openAI]: <https://github.com/valur628/TextSummaryExtractor-openAI>
    [TextKeywordExtractor-konlpy]: <https://github.com/valur628/TextKeywordExtractor-konlpy>
    [FineTuningTextHelper-openAI]: <https://github.com/valur628/FineTuningTextHelper-openAI>
    [openai]: <https://platform.openai.com/>
