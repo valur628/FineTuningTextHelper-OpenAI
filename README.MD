@@ -22,7 +22,7 @@
 ### 개발 환경
 | 종류 | 목록 |
 | ------ | ------ |
-| 사용 언어 | Python(3.10) |
+| 사용 언어 | JavaScript |
 | 개발 도구 | Visual Studio Code |
 | 데이터베이스 | JavaScript Object Notation (JSON) |
 | OS 환경 | Windows 10 |
