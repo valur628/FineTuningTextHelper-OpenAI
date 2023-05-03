@@ -38,7 +38,7 @@ function downloadUploadResult() {
         link.download = 'uploadResult.json';
         link.click();
     } else {
-        alert("파일 업로드 결과가 없습니다.");
+        alert("업로드 파일이 없습니다.");
     }
 }
 
@@ -93,7 +93,7 @@ async function getFineTuneList() {
         try {
             parsedFineTuneResult = JSON.parse(fineTuneResult);
         } catch (error) {
-            alert("올바른 JSON 형식의 파인튜닝 결과를 입력해주세요.");
+            alert("올바른 JSON 형식의 파인튜닝 파일을 넣어주세요.");
             return;
         }
 
@@ -115,7 +115,7 @@ async function getFineTuneList() {
 
             document.getElementById('fineTuneListResult').textContent = JSON.stringify(filteredData, null, 2);
         } else {
-            alert("파인튜닝 목록을 가져올 수 없습니다.");
+            alert("파인튜닝 정보를 가져올 수 없습니다.");
         }
     };
     reader.readAsText(file);
