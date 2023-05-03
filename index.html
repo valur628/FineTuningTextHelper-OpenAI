@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextHelper</title>
+    <script src="assets/js/load-price-table.js" defer></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/price-table.css">
+
+</head>
+<body>
+    <header>
+        <h1>TextHelper for GPT-3 fine-tuner</h1>
+    </header>
+    <main>
+        <section class="api-section">
+            <div class="card api-card">
+                <h2>API 키 설정</h2>
+                <label for="apiKeyInput">API 키:</label>
+                <input type="password" id="apiKeyInput">
+                <button onclick="setApiKey()">API 키 설정</button>
+            </div>
+            <div id="priceTableContainer"></div>
+        </section>
+        <section class="tuning-section">
+            <div class="card tuning-card">
+                <h2>1단계: 훈련 데이터</h2>
+                <input type="file" id="fileInput">
+                <button onclick="uploadFile()">jsonl 훈련 데이터 업로드</button>
+                <button onclick="downloadUploadResult()">훈련 데이터 정보 다운로드</button>
+                <pre id="uploadResult"></pre>
+            </div>
+            </div>
+            <div class="card tuning-card">
+                <h2>2단계: 모델 훈련</h2>
+                <label for="trainingFileId">훈련할 파일의 ID:</label>
+                <input type="text" id="trainingFileId">
+                <label for="model">모델 (1K 토큰 당 훈련 가격):</label>
+                <select id="model">
+                  <option value="ada">ada($0.0004)</option>
+                  <option value="babbage">babbage($0.0006)</option>
+                  <option value="curie" selected>curie($0.0030)</option>
+                  <option value="davinci">davinci($0.0300)</option>
+                </select>
+                <button onclick="fineTune()">파인튜닝 시작</button>
+                <button onclick="downloadFineTuneResult()">모델 정보 다운로드</button>
+                <pre id="fineTuneResult"></pre>
+            </div>
+            </div>
+            <div class="card tuning-card">
+                <h2>3단계: 현재 정보</h2>
+                <label for="fineTuneResultFile">파인튜닝 정보 파일:</label>
+                <input type="file" id="fineTuneResultFile">
+                <button onclick="getFineTuneList()">현재 모델 정보 얻기</button>
+                <pre id="fineTuneListResult"></pre>
+            </div>
+        </section>
+        <section class="chat-section">
+            <div class="card chat-card">
+                <h2>채팅 기록</h2>
+                <div id="historyContainer"></div>
+            </div>
+            <div class="card chat-card">
+                <h2>4단계: 파인튜닝 모델과 채팅</h2>
+                <label for="messageInput">메시지:</label>
+                <input type="text" id="messageInput">
+                <button onclick="sendMessage()">메시지 보내기</button>
+                <pre id="chatResult"></pre>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  border: 3px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.api-card {
+  background-color: #e0e0e0;
+}
+
+.tuning-card {
+  background-color: #d0d0d0;
+}
+
+.chat-card {
+  background-color: #c0c0c0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button + button {
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 0.9em;
+}
