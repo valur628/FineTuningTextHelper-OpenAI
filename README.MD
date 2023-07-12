@@ -30,7 +30,7 @@
 본 프로젝트의 결과물을 시연하는 방법입니다.
 - openAI 홈페이지에서 API 키를 받아온다.
 - 해당 API 키를 웹페이지의 API 키 설정에 넣는다. 그리고 API 키 설정 버튼을 누른다.
-- [Text Keyword Extractor]로 만들어진 jsonl 데이터를 훈련 데이터에 넣고, jsonl 훈련 데이터 파일을 업로드한다.
+- [TextKeywordExtractor-konlpy]로 만들어진 jsonl 데이터를 훈련 데이터에 넣고, jsonl 훈련 데이터 파일을 업로드한다.
 - 그러면 나오는 file Response("object": "file"로 시작)에서 id를 따로 기록하거나 전체 데이터 정보를 다운로드 받아둔다.
 - 그리고 해당 내용에 있는 id를 아래의 모델 훈련에 집어 넣는다.
 - 가격에 주의하며 모델을 선택 후 파인 튜닝을 시작한다.
